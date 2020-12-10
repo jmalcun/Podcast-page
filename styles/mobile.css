@@ -1,0 +1,356 @@
+/*PANTALLA TELEFONOS*/
+@media only screen and (max-width: 320px){
+
+    .container{
+        width: 320px;
+    }
+    
+    /*HEADER*/
+    .header{
+        width: 320px;
+        height: 350px;
+    }
+
+    .navbar{
+        width: 320px;
+        height: 44px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 26px 0px 26px 0px;
+    }
+
+    .navbar-items{
+        display: block;
+        width: 320px;
+        height: 224px;
+        margin-top: 10px;
+        z-index: 10;
+    }
+
+    .box-icon img{
+        margin-left: 16px;
+    }
+
+    .icono1{
+        visibility: visible;
+        margin-left: 260px;
+        font-size: 14px;
+        position: absolute;
+    }
+
+    .navbar-items{
+        position: relative;
+    }
+
+    .navbar-items ul {
+        display: none;
+        width: 100%;
+        background-color: #0000EC;
+        text-align: left; 
+        padding: 8px;
+        margin: 0px;  
+    }
+
+    #cbox1:checked ~ ul{
+        display: block;
+        text-decoration: none;
+        margin-top: 5px;
+        animation: movimiento 2s ease;
+    }
+
+    @keyframes movimiento {
+        from{
+            transform: translateY(-100%);
+        }
+        to{
+            transform: translateY(0%);
+        }
+    }
+
+    #cbox1:checked ~  ul li{
+        display: block;
+        text-decoration: none;
+        margin-bottom: 24px;
+    }
+    
+    #cbox1:checked ~ ul li:first-child{
+        margin-top: 14px;
+    }
+
+    #cbox1:checked ~ ul li a{
+        text-decoration: none;
+        font-size: 16px;
+        color: #FFFFFF;
+        line-height: 28px;    
+    }
+
+    #cbox1:checked + label .icono1{
+        opacity: 0;    
+    }
+
+    #cbox1:checked + label .icono2{
+        visibility: visible;
+        font-size: 16px;
+        position: absolute;
+        left: 275px;
+        top: -2px;
+    }
+
+    /*TITULO*/
+    .box-title{
+        width: 265px;
+    }
+
+    .title{
+        padding-left: 16px;
+        margin-top: 29px;
+        flex-wrap: wrap;
+        width: 250px;
+        height: 100px;
+    }
+
+    .title h1{
+        font-size: 32px;
+    }
+
+    .box-1{
+        width: 85px;
+        height: 42px;
+        text-align: center;
+    }
+
+    .box-2{
+        width: 85px;
+        height: 42px;
+        text-align: center;
+    }
+
+    .box-3{
+        width: 228px;
+        height: 140px;
+    }
+
+    .box-3 h1{
+        padding-left: 5px;
+    }
+
+    .subtitle{
+        width: 288px;
+        height: 66px;
+        padding-left: 20px;
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    .subtitle p{
+        font-size: 11px;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+
+    .box-title button{
+        width: 288px;
+        height: 48px;
+        margin-left: 16px;
+        margin-top: 36px;
+    }
+    
+    /*BOX CENTRAL*/
+    .box-center-page{
+        width: 320px;
+        height: 3653px;
+    }
+    
+    /*BOX CENTRAL MUSICA*/
+    .rectangulo{
+        width: 320px;
+        height: 1260.5px;
+    }
+
+    .rombo{
+        clip-path: polygon(100% 0%, 100% 97%, 0% 100%, 0% 3%); 
+    }
+
+    .box-center-title{
+        margin-left: 16px;
+        margin-top: 45px;
+    }
+
+    .container-music{
+        width: 300px;
+        margin-left: 11px;
+    }
+
+    .music{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .iframe-contain{
+        width: 298px;
+        /*height: 225px;
+        por reestricciones de spotify no me permite modificar el alto del podcast, por eso utilizo la altura por defecto
+        */
+        margin-bottom: 11px;
+    }
+
+    .box-celu {
+        position: absolute;
+        left: 0px;
+        top: 1155px;
+        width: 320px;
+        height: 519px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .celu-1{
+        width: 300px;
+        height: 515px;
+    }
+
+    .box-center-2 {
+        width: 298px;
+        height: 350px;
+        margin-left: 16px;
+        margin-top: 430px;
+    }
+
+    .box-center-2-title {
+        width: 288px;
+        height: 84px;
+    }
+
+    .box-center-2-title h3{
+        font-size: 36px;
+    }
+
+    .box-center-2-description {
+        width: 288px;
+        height: 270px;
+        margin-top: 12px;
+    }
+
+    .box-center-2-description p{
+        font-size: 1.4rem;
+        line-height: 22px;
+    }
+
+    /*BOX CENTER 3*/
+    .box-center-3{
+        width: 320px;
+        height: 1556px;
+        margin-top: 54px;
+    }
+    .box-center-3-title{
+        width: 288px;
+        height: 84px;
+        margin-left: 16px;
+    }
+
+    .box-center-3-title h3{
+        font-size: 36px;
+    }
+
+    .box-center-3-photos{
+        width: 320px;
+        height: 1458px;
+        margin-top: 14px;
+    }
+
+    .box-photos{
+        width: 320px;
+        height: 1458px;
+        flex-direction: column;
+    }
+    
+    .photo{
+        width: 320px;
+        height: 243px;
+    }
+
+    .photo img{
+        width: 320px;
+        height: 243px;
+    }
+
+    /*BOTTOM PAGE*/
+    .bottom-page{
+        width: 320px;
+        height: 1400px;
+    }
+
+    .bottom-page-title{
+        width: 288px;
+        height: 84px;
+        margin-left: 16px;
+        margin-top: 48px;
+    }
+
+    .bottom-page-title h3{
+        font-size: 36px;
+    }
+
+    .bottom-page-icons{
+        width: 320px;
+        height: 850px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*BOTTOM PAGE NOVELTIES*/
+    .bottom-page-novelties{
+        width: 320px;
+        height: 341px;
+    }
+
+    .rombo-2{
+        clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .novelties{
+        width: 288px;
+        height: 126px;
+    }
+    
+    .novelties h3{
+        font-size: 36px;
+    }
+
+    .bottom-page-novelties button{
+        width: 288px;
+        height: 48px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    /*FOOTER*/
+    .footer{
+        width: 320px;
+        height: 126px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-bottom: 36px;
+    }
+
+    .footer-text{
+        width: 227px;
+        height: 22px;
+        margin-left: 46px;
+        margin-top: 24px;
+    }
+
+    .footer-text p{
+        font-size: 14px;
+    }
+
+    .footer-icons{
+        width: 227px;
+        height: 28px;
+        margin-top: 25px;
+        margin-left: 46px;
+    }
+}
