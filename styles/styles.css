@@ -169,6 +169,10 @@ body{
     font-weight: bold;
 }
 
+.title h1 span{
+    color: #0000EC;
+}
+
 .subtitle{
     width: 617px;
     height: 48px;
@@ -297,7 +301,7 @@ body{
 .box-center-2{
     width: 464px;
     height: 454px;
-    margin-left: 608px;
+    margin-left: 50.7%;
 }
 
 .box-center-2-title{
