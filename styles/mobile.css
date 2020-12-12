@@ -180,6 +180,7 @@
     .container-music{
         width: 300px;
         margin-left: 11px;
+        margin-right: 0;
     }
 
     .music{
@@ -187,6 +188,10 @@
         height: 600px;
         display: flex;
         flex-direction: column;
+    }
+
+    .music .iframe-contain:first-child{
+        margin-right: 0px;
     }
 
     .iframe-contain{
