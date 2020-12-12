@@ -71,7 +71,7 @@
     #cbox1:checked ~  ul li{
         display: block;
         text-decoration: none;
-        margin-bottom: 24px;
+        margin-bottom: 20.5px;
     }
     
     #cbox1:checked ~ ul li:first-child{
