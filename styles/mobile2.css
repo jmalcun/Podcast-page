@@ -1,5 +1,5 @@
-/*PANTALLA TABLETS*/
-@media only screen and (min-width: 501px) and (max-width: 830px){
+/*PANTALLA TELEFONOS*/
+@media only screen and (min-width: 321px) and (max-width: 500px){
 
     .container{
         width: 100%;
@@ -20,7 +20,7 @@
     .navbar-items{
         display: block;
         width: 100%;
-        margin-top: 6px;
+        margin-top: 5px;
         z-index: 10;
     }
 
@@ -30,13 +30,9 @@
 
     .icono1{
         visibility: visible;
-        margin-left: 90%;
+        margin-left: 81%;
         font-size: 14px;
         position: absolute;
-    }
-
-    .navbar-items{
-        position: relative;
     }
 
     .navbar-items ul {
@@ -88,28 +84,29 @@
     #cbox1:checked + label .icono2{
         visibility: visible;
         font-size: 16px;
-        margin-left: 90%;
+        margin-left: 81%;
     }
 
     /*TITULO*/
     .title{
-        padding-left: 4.5%;
+        padding-left: 16px;
         margin-top: 29px;
+        flex-wrap: wrap;
     }
 
     .title h1{
-        font-size: 4rem;
+        font-size: 32px;
     }
 
     .subtitle{
-        width: 90%;
-        padding-left: 5%;
+        width: 288px;
+        padding-left: 20px;
         margin-left: 0px;
         text-align: left;
     }
 
     .subtitle p{
-        font-size: 1.1rem;
+        font-size: 11px;
         letter-spacing: 0;
         line-height: 22px;
     }
@@ -117,138 +114,176 @@
     .box-title button{
         width: 288px;
         height: 48px;
-        margin-left: 5%;
-        margin-top: 26px;
+        margin-left: 16px;
+        margin-top: 25px;
     }
     
     /*BOX CENTRAL MUSICA*/
-    .box-center-page{
-        position: relative;
+    .rectangulo{
         width: 100%;
-        margin-top: 40px;
-    }
-
-    .rectangulo {
-        width: 100%;
-        height: 930px;
-        display: flex;
-        flex-direction: column;
+        height: 1260.5px;
     }
 
     .rombo{
-        clip-path: polygon(100% 0%, 100% 93%, 0% 100%, 0% 7%);
+        clip-path: polygon(100% 0%, 100% 97%, 0% 100%, 0% 3%); 
     }
 
     .box-center-title{
-        margin-top: 21%;
-        margin-left: 10%;
-        margin-bottom: 26px;
-    }
-
-    .box-center-title h3{
-        color: #FFFFFF;
-        font-weight: 400;
+        margin-left: 16px;
+        margin-top: 45px;
     }
 
     .container-music{
-        margin-left: 2%;
-        margin-right: 2%;
-        display: flex;
-        flex-direction: column;
+        margin: 0 auto;
     }
 
     .music{
         display: flex;
+        flex-direction: column;
     }
 
     .music .iframe-contain:first-child{
-        margin-right: 20px;
+        margin-right: 0px;
     }
 
     .iframe-contain{
-        width: 465px;
-        height: 232px;
-        margin-bottom: 50px;
-        border-radius: 20px;
+        width: 298px;
+        /*height: 225px;
+        por reestricciones de spotify no me permite modificar el alto del podcast, por eso utilizo la altura por defecto
+        */
+        margin-bottom: 11px;
     }
 
-    .box-celu{
+    .box-celu {
         position: absolute;
         left: 0px;
-        top: 810px;
+        top: 1155px;
         width: 100%;
         height: 519px;
         display: flex;
         justify-content: center;
     }
-
+    
     .celu-1{
         width: 300px;
         height: 515px;
     }
 
     .box-center-2 {
-        padding-left: 0;
-        margin-top: 435px;
-        height: 290px;
+        padding-left: 5%;
+        margin-top: 430px;
     }
 
-    .box-center-2-title{
-        width: 100%;
-        padding-left: 5%; 
+    .box-center-2-title {
+        width: 85%;
     }
 
     .box-center-2-title h3{
-        font-size: 40px;
+        font-size: 36px;
     }
 
-    .box-center-2-description{
-        width: 100%;
-        padding-left: 5%;
-        padding-right: 3%;
+    .box-center-2-description {
+        width: 95%;
+        height: 270px;
+        margin-top: 12px;
     }
 
-    /*BOX CENTRAL 3*/
+    .box-center-2-description p{
+        font-size: 1.4rem;
+        line-height: 22px;
+    }
+
+    /*BOX CENTER 3*/
     .box-center-3{
-        margin-top: 25px;
+        margin-top: 0px;
     }
 
     .box-center-3-title{
-        padding-left: 5%
+        padding-left: 5%;
     }
 
     .box-center-3-title h3{
-        font-size: 4rem;
+        font-size: 36px;
     }
 
-    /*BOTTON-PAGE*/
+    .box-center-3-photos{
+        margin-top: 14px;
+    }
+
+    .box-photos{
+        flex-direction: column;
+    }
+    
+    .photo{
+        width: 100%;
+        height: 243px;
+    }
+
+    .photo img{
+        width: 100%;
+        height: 243px;
+    }
+
+    /*BOTTOM PAGE*/
     .bottom-page-title{
         padding-left: 5%;
-        margin-top: 63px;
+        margin-top: 48px;
     }
 
     .bottom-page-title h3{
-        font-size: 4rem;
+        font-size: 36px;
     }
 
+    .bottom-page-icons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*BOTTOM PAGE NOVELTIES*/
     .bottom-page-novelties{
-        height: 400px;
+        margin-top: 10px;
+        height: 341px;
     }
 
+    .rombo-2{
+        clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .novelties{
+        width: 288px;
+    }
+    
     .novelties h3{
-        font-size: 3.8rem;
+        font-size: 36px;
+    }
+
+    .bottom-page-novelties button{
+        width: 288px;
+        height: 48px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    /*FOOTER*/
+    .footer{
+        height: 121px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-bottom: 36px;
+        padding-top: 20px;
     }
 
     .footer-text{
-        margin-left: 1%;
+        margin:0 auto;
     }
 
     .footer-text p{
-        font-size: 1.3rem;
+        font-size: 14px;
     }
 
     .footer-icons{
-        margin-right: 1%;
-        justify-content: space-around;
+        width: 227px;
+        margin: 0 auto;
+        padding-top: 15px;
     }
 }
